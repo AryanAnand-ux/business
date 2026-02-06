@@ -1,0 +1,39 @@
+/* Animation Utilities */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+
+/* Navigation Blur */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(197, 160, 101, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+}
+
+/* Mobile Menu Transitions */
+.mobile-menu-closed {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.mobile-menu-open {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}

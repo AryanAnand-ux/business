@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>Aryan Anand Taal Bamboo Dukan | Quality Bamboo & Construction Materials</title>
+    <meta name="description" content="Kochas's trusted supplier of high-quality bamboo, centering plywood, and construction materials. Reliable delivery and wholesale prices. Call 08084616111.">
+    <meta name="keywords" content="bamboo supplier, plywood kochas, construction materials bihar, taal products, bamboo ladders, centering sheets">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aryan Anand Taal Bamboo Dukan">
+    <meta property="og:description" content="Quality bamboo and construction solutions in Kochas, Bihar.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1559523161-b9d534b15b9b?q=80&w=1200">
+
+    <!-- Google Fonts: Playfair Display (Elegant) & Plus Jakarta Sans (Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0B231E',   // Deepest Forest Green (Luxury)
+                            primary: '#1A3C34', // Standard Green
+                            gold: '#C5A065',   // Metallic Gold Accent
+                            cream: '#F5F3EF',  // Warm Off-White Background
+                            surface: '#FFFFFF',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(to right bottom, rgba(11, 35, 30, 0.85), rgba(11, 35, 30, 0.7)), url('https://images.unsplash.com/photo-1631870229714-d9415b13335e?q=80&w=1920&auto=format&fit=crop')",
+                        'texture': "url('https://www.transparenttextures.com/patterns/cubes.png')" 
+                    },
+                    transitionProperty: {
+                        'height': 'height',
+                        'spacing': 'margin, padding',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Aryan Anand Taal Bamboo Dukan",
+      "founder": { "@type": "Person", "name": "Chandrajyot Jaiswal" },
+      "telephone": "+918084616111",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sasaram Road",
+        "addressLocality": "Kochas",
+        "addressRegion": "Bihar",
+        "postalCode": "821112",
+        "addressCountry": "IN"
+      },
+      "openingHours": "Mo-Su 06:30-17:30",
+      "priceRange": "$"
+    }
+    </script>
+
+    
+</head>
+<body class="bg-brand-cream font-sans text-gray-800 antialiased selection:bg-brand-gold selection:text-brand-dark">
+
+    <!-- Navigation -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-500" id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#home" class="flex flex-col group relative z-50">
+                <span class="font-serif text-2xl font-bold text-brand-dark tracking-tight leading-none">Aryan Anand</span>
+                <div class="h-[1px] w-12 bg-brand-gold my-1 group-hover:w-full transition-all duration-500"></div>
+                <span class="text-[10px] font-bold tracking-[0.2em] uppercase text-brand-gold">Taal Bamboo Dukan</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="#services" class="text-sm font-medium tracking-wide text-brand-dark/80 hover:text-brand-gold transition-colors">Services</a>
+                <a href="#products" class="text-sm font-medium tracking-wide text-brand-dark/80 hover:text-brand-gold transition-colors">Products</a>
+                <a href="#gallery" class="text-sm font-medium tracking-wide text-brand-dark/80 hover:text-brand-gold transition-colors">Gallery</a>
+                <a href="#visit" class="text-sm font-medium tracking-wide text-brand-dark/80 hover:text-brand-gold transition-colors">Contact</a>
+                
+                <!-- CTA Button -->
+                <a href="tel:8084616111" class="border border-brand-primary text-brand-primary px-6 py-2 rounded-none text-sm font-semibold hover:bg-brand-primary hover:text-white hover:border-brand-primary transition-all duration-300 flex items-center gap-2 uppercase tracking-widest">
+                    Call Now
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-brand-dark p-2 relative z-50 focus:outline-none" aria-label="Open Menu" aria-expanded="false">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu (Full Screen Overlay with Fade Transition) -->
+        <div id="mobile-menu" class="mobile-menu-closed fixed inset-0 bg-brand-cream z-40 flex flex-col justify-center items-center space-y-8 transition-all duration-300 ease-in-out">
+            <button id="close-menu" class="absolute top-6 right-6 text-4xl text-brand-dark p-2 hover:text-brand-gold transition-colors" aria-label="Close Menu">&times;</button>
+            
+            <a href="#services" class="font-serif text-3xl text-brand-dark hover:text-brand-gold transition-colors transform hover:scale-105 duration-200">Services</a>
+            <a href="#products" class="font-serif text-3xl text-brand-dark hover:text-brand-gold transition-colors transform hover:scale-105 duration-200">Products</a>
+            <a href="#gallery" class="font-serif text-3xl text-brand-dark hover:text-brand-gold transition-colors transform hover:scale-105 duration-200">Gallery</a>
+            <a href="#visit" class="font-serif text-3xl text-brand-dark hover:text-brand-gold transition-colors transform hover:scale-105 duration-200">Visit Us</a>
+            
+            <div class="pt-8">
+                <a href="tel:8084616111" class="border border-brand-dark px-10 py-3 text-xl font-serif text-brand-dark uppercase tracking-widest hover:bg-brand-dark hover:text-white transition-all duration-300">Call Now</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen min-h-[600px] flex items-center bg-hero-pattern bg-cover bg-center bg-fixed bg-no-repeat text-white">
+            <div class="container mx-auto px-6 relative z-10 text-center md:text-left">
+                <div class="max-w-4xl mx-auto md:mx-0">
+                    <div class="inline-flex items-center gap-2 mb-6 reveal justify-center md:justify-start">
+                        <span class="h-[1px] w-8 md:w-12 bg-brand-gold"></span>
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs">Established in Kochas</span>
+                    </div>
+                    
+                    <!-- Typography scaled for mobile readability -->
+                    <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-tight mb-8 reveal delay-100 drop-shadow-lg">
+                        Quality Bamboo & <br>
+                        <span class="italic font-light text-brand-gold">Materials.</span>
+                    </h1>
+                    
+                    <p class="text-base md:text-xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto md:mx-0 font-light reveal delay-200 drop-shadow-md">
+                        Building trust with superior strength. We provide the highest standard of bamboo, centering plywood, and construction essentials for your vision.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 reveal delay-300 justify-center md:justify-start">
+                        <a href="#products" class="bg-brand-gold text-brand-dark font-bold py-4 px-10 hover:bg-white transition-all duration-300 shadow-lg shadow-brand-gold/20 text-center rounded-sm">
+                            View Collection
+                        </a>
+                        <a href="#visit" class="border border-white/30 text-white font-medium py-4 px-10 hover:bg-white hover:text-brand-dark transition-all duration-300 backdrop-blur-sm text-center rounded-sm">
+                            Visit Our Store
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Elegant Stats Strip -->
+        <section class="bg-white py-12 md:py-16 border-b border-brand-gold/10">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                    <div class="p-4 reveal">
+                        <span class="block font-serif text-4xl text-brand-dark mb-2">100%</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest">Quality Assurance</span>
+                    </div>
+                    <div class="pt-8 md:pt-4 p-4 reveal delay-100">
+                        <span class="block font-serif text-4xl text-brand-dark mb-2">Local</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest">Community Focused</span>
+                    </div>
+                    <div class="pt-8 md:pt-4 p-4 reveal delay-200">
+                        <span class="block font-serif text-4xl text-brand-dark mb-2">Fair</span>
+                        <span class="text-xs text-gray-500 uppercase tracking-widest">Market Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section (Dark Mode) -->
+        <section id="services" class="py-16 md:py-32 bg-brand-dark text-white relative overflow-hidden">
+            <!-- Decorative Background Texture -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-brand-gold opacity-5 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-20 reveal">
+                    <div class="max-w-2xl">
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs block mb-4">Our Expertise</span>
+                        <h2 class="font-serif text-3xl md:text-5xl text-white font-medium">Exceptional Service</h2>
+                    </div>
+                    <div class="w-24 h-[1px] bg-brand-gold mt-8 md:mt-0 opacity-50"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Service 1 -->
+                    <div class="group relative border-t border-white/10 pt-8 md:pt-10 transition-all duration-500 hover:border-brand-gold reveal">
+                        <span class="absolute top-0 right-0 text-6xl font-serif text-white/5 group-hover:text-brand-gold/10 transition-colors select-none">01</span>
+                        <div class="w-12 h-12 mb-6 text-brand-gold">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4 text-white">In-Store Experience</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Immerse yourself in our selection. Visit our yard on Sasaram Road to hand-select materials that meet your exacting standards.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="group relative border-t border-white/10 pt-8 md:pt-10 transition-all duration-500 hover:border-brand-gold reveal delay-100">
+                        <span class="absolute top-0 right-0 text-6xl font-serif text-white/5 group-hover:text-brand-gold/10 transition-colors select-none">02</span>
+                        <div class="w-12 h-12 mb-6 text-brand-gold">
+                            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4 text-white">Prompt Delivery</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Respecting your timeline. We ensure your materials arrive safely at your construction site in Kochas and surrounding areas.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="group relative border-t border-white/10 pt-8 md:pt-10 transition-all duration-500 hover:border-brand-gold reveal delay-200">
+                        <span class="absolute top-0 right-0 text-6xl font-serif text-white/5 group-hover:text-brand-gold/10 transition-colors select-none">03</span>
+                        <div class="w-12 h-12 mb-6 text-brand-gold">
+                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+                        </div>
+                        <h3 class="font-serif text-2xl mb-4 text-white">Custom Orders</h3>
+                        <p class="text-gray-400 font-light leading-relaxed">Tailored to your needs. Whether for large-scale infrastructure or bespoke furniture, we handle specific sizing and bulk requests.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Showcase -->
+        <section id="products" class="py-16 md:py-32 bg-brand-cream">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-20 reveal">
+                    <h2 class="font-serif text-3xl md:text-5xl text-brand-dark font-medium mb-6">Quality Inventory</h2>
+                    <p class="text-gray-600 font-light text-lg">Sourced for durability and aesthetic appeal, our materials form the backbone of lasting structures.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
+                    <!-- Card 1 -->
+                    <div class="relative group overflow-hidden shadow-xl reveal rounded-sm">
+                        <!-- Mobile: Overlay is always visible. Desktop: Visible on Hover -->
+                        <div class="absolute inset-0 bg-black/60 md:bg-black/40 md:group-hover:bg-black/50 transition-colors duration-700 z-10"></div>
+                        
+                        <!-- Responsive Height: h-80 for mobile, h-500px for desktop -->
+                        <img src="https://img.freepik.com/premium-photo/closeup-view-textured-bamboo-poles-arranged-vertically-showcasing-natural-colors-patterns-rustic-aesthetic_454892-6084.jpg?q=80&w=1000&auto=format&fit=crop" alt="Bamboo poles stacked vertically" loading="lazy" decoding="async" class="w-full h-80 md:h-[500px] object-cover transform md:group-hover:scale-105 transition-transform duration-1000">
+                        
+                        <div class="absolute inset-0 z-20 p-8 md:p-12 flex flex-col justify-end md:border-[12px] border-transparent md:group-hover:border-brand-gold/50 transition-all duration-500">
+                            <!-- Info: Always visible on mobile, slides up on desktop -->
+                            <h3 class="font-serif text-2xl md:text-3xl text-white mb-2 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500">Bamboo & Wood</h3>
+                            
+                            <div class="h-[1px] w-16 bg-brand-gold mb-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100"></div>
+                            
+                            <ul class="text-gray-200 space-y-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-200 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 text-sm md:text-base">
+                                <li>&bull; Bamboo Poles (All Sizes)</li>
+                                <li>&bull; Handcrafted Bamboo Ladders</li>
+                                <li>&bull; Chali (Woven Mats)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="relative group overflow-hidden shadow-xl reveal delay-100 rounded-sm">
+                        <div class="absolute inset-0 bg-black/60 md:bg-black/40 md:group-hover:bg-black/50 transition-colors duration-700 z-10"></div>
+                        
+                        <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=1000&auto=format&fit=crop" alt="Construction site materials" loading="lazy" decoding="async" class="w-full h-80 md:h-[500px] object-cover transform md:group-hover:scale-105 transition-transform duration-1000">
+                        
+                        <div class="absolute inset-0 z-20 p-8 md:p-12 flex flex-col justify-end md:border-[12px] border-transparent md:group-hover:border-brand-gold/50 transition-all duration-500">
+                            <h3 class="font-serif text-2xl md:text-3xl text-white mb-2 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 transition-transform duration-500">Construction Materials</h3>
+                            <div class="h-[1px] w-16 bg-brand-gold mb-4 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-100"></div>
+                            <ul class="text-gray-200 space-y-2 opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-700 delay-200 translate-y-0 md:translate-y-4 md:group-hover:translate-y-0 text-sm md:text-base">
+                                <li>&bull; Centering Plywood Sheets</li>
+                                <li>&bull; Patra (Planks)</li>
+                                <li>&bull; Gol & Henga</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12 md:mt-16 reveal">
+                    <a href="tel:8084616111" class="inline-block border-b border-brand-dark pb-1 text-brand-dark font-serif italic text-lg md:text-xl hover:text-brand-gold hover:border-brand-gold transition-colors">
+                        Inquire about current pricing &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid (Masonry Style) -->
+        <section id="gallery" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16 reveal">
+                    <div>
+                        <span class="text-brand-gold font-bold tracking-widest uppercase text-xs block mb-2">Visual Tour</span>
+                        <h2 class="font-serif text-3xl md:text-4xl text-brand-dark font-medium">Our Facility</h2>
+                    </div>
+                    <div class="hidden md:block text-right text-gray-500 text-sm font-light">
+                        Tap images to expand
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[150px] md:auto-rows-[200px]">
+                    <div class="gallery-item col-span-2 row-span-2 relative group overflow-hidden cursor-pointer reveal rounded-lg">
+                        <!-- Lazy loading added for performance -->
+                        <img src="business1.jpg" onerror="this.src='https://images.unsplash.com/photo-1621886767750-478a209e68b9?w=600&q=80'" alt="Shop front view" loading="lazy" decoding="async" width="1220" height="734" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/20 transition-colors"></div>
+                    </div>
+                    <div class="gallery-item relative group overflow-hidden cursor-pointer reveal delay-100 rounded-lg">
+                        <img src="business3.jpg" onerror="this.src='https://images.unsplash.com/photo-1622371670410-640c14d9e272?w=500&q=80'" alt="Detailed view of bamboo products" loading="lazy" decoding="async" width="1220" height="692" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="gallery-item relative group overflow-hidden cursor-pointer reveal delay-200 rounded-lg">
+                        <img src="business4.jpg" onerror="this.src='https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=500&q=80'" alt="Stockpile of construction wood" loading="lazy" decoding="async" width="1220" height="904" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="gallery-item col-span-2 relative group overflow-hidden cursor-pointer reveal delay-100 rounded-lg">
+                        <img src="business2.jpg" onerror="this.src='https://images.unsplash.com/photo-1534237966377-f43559856f9d?w=800&q=80'" alt="Close up of materials" loading="lazy" decoding="async" width="965" height="1280" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                    <div class="gallery-item col-span-2 md:col-span-1 relative group overflow-hidden cursor-pointer reveal delay-200 rounded-lg">
+                        <img src="business5.jpg" onerror="this.src='https://images.unsplash.com/photo-1518605988179-77d2da33a78d?w=500&q=80'" alt="Worker organizing products" loading="lazy" decoding="async" width="1220" height="914" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refined Contact Section -->
+        <section id="visit" class="py-16 md:py-24 bg-brand-cream relative">
+            <div class="container mx-auto px-6">
+                <div class="bg-white shadow-2xl flex flex-col lg:flex-row reveal rounded-xl overflow-hidden">
+                    <!-- Info Side -->
+                    <div class="lg:w-5/12 p-8 md:p-12 lg:p-20 flex flex-col justify-center border-r border-gray-100">
+                        <h2 class="font-serif text-3xl text-brand-dark mb-8">Visit Our Shop</h2>
+                        
+                        <div class="space-y-6 md:space-y-8">
+                            <div class="flex items-start">
+                                <div class="text-brand-gold mt-1 mr-4 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Address</p>
+                                    <p class="text-brand-dark font-medium leading-relaxed">Sasaram Road, Kochas,<br>Bihar 821112</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-brand-gold mt-1 mr-4 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Hours</p>
+                                    <p class="text-brand-dark font-medium leading-relaxed">Mon - Sun: 06:30 AM — 05:30 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="text-brand-gold mt-1 mr-4 shrink-0">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Proprietor</p>
+                                    <p class="text-brand-dark font-medium">Chandrajyot Jaiswal</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="tel:8084616111" class="mt-10 md:mt-12 w-full bg-brand-dark text-white font-bold py-4 md:py-5 px-8 hover:bg-brand-gold transition-colors text-center tracking-widest uppercase text-sm rounded">
+                            Call 8084616111
+                        </a>
+                    </div>
+
+                    <!-- Map Side -->
+                    <div class="lg:w-7/12 h-[300px] md:h-[400px] lg:h-auto relative">
+                        <!-- Lazy loading enabled for map -->
+                        <iframe src="https://maps.google.com/maps?q=25.2902,83.7441&z=15&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" class="absolute inset-0 grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white pt-16 md:pt-24 pb-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 border-b border-white/5 pb-16">
+                <div>
+                    <h3 class="font-serif text-2xl text-white mb-6">Aryan Anand Taal Bamboo Dukan</h3>
+                    <p class="text-gray-400 font-light leading-relaxed max-w-xs">
+                        Your trusted partner in Kochas for high-quality bamboo and construction materials. Built on integrity and strength.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-brand-gold uppercase tracking-widest text-xs font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li><a href="#home" class="hover:text-brand-gold transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-brand-gold transition-colors">Services</a></li>
+                        <li><a href="#products" class="hover:text-brand-gold transition-colors">Products</a></li>
+                        <li><a href="#visit" class="hover:text-brand-gold transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-brand-gold uppercase tracking-widest text-xs font-bold mb-6">Connect</h4>
+                    <p class="text-gray-400 mb-2">Phone: <a href="tel:8084616111" class="text-white hover:text-brand-gold transition-colors">8084616111</a></p>
+                    <p class="text-gray-400">Location: Kochas, Bihar</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 text-center md:text-left">
+                <p>&copy; 2025 Aryan Anand Taal Bamboo Dukan. All Rights Reserved.</p>
+                <p class="mt-2 md:mt-0">Designed for Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp (Minimal Style) -->
+    <a href="https://wa.me/918084616111" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 bg-[#25D366] text-white p-3 md:p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 flex items-center justify-center group focus:outline-none focus:ring-2 focus:ring-brand-gold">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/95 z-[60] hidden flex justify-center items-center p-4 backdrop-blur-sm transition-opacity duration-300">
+        <img id="lightbox-img" src="" alt="Enlarged view" class="max-w-full max-h-[80vh] md:max-h-[90vh] rounded shadow-2xl">
+        <button id="lightbox-close" class="absolute top-4 right-4 md:top-6 md:right-6 text-white hover:text-brand-gold transition-colors text-3xl md:text-4xl font-light" aria-label="Close Lightbox">&times;</button>
+    </div>
+
+    <!-- Interactive Logic -->
+    <script src="app.js" defer></script>
+</body>
+</html>
